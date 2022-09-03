@@ -57,7 +57,7 @@ function game() {
     } while (true);
     console.log(computerSelection + ' > ' + playerSelection);
     let gameOutcome = playRound(playerSelection, computerSelection);
-    console.log(gameOutcome);
+    // console.log(gameOutcome);
     score += gameOutcome[0];
     console.log(score);
     message = gameOutcome[1] + '\nWrite rock, paper, or scissors';
