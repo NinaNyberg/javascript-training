@@ -49,9 +49,11 @@ function game() {
     do {
       playerSelection = prompt(message);
       if (playerSelection == null) return 'You quit means you lose';
-      else if (gameOptions.indexOf(playerSelection) > -1) {
+      else {
         playerSelection = playerSelection.toLowerCase();
-        break;
+        if (gameOptions.indexOf(playerSelection) > -1) {
+          break;
+        }
       }
       message = 'Incorrect input!\nWrite rock, paper, or scissors';
     } while (true);
