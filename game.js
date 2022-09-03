@@ -73,10 +73,10 @@ function game() {
   return score > 0 ? 'You won' : score < 0 ? 'Computer won' : 'It´s a tie';
 }
 
-window.addEventListener('load', async () => {
-  await new Promise((resolve) => {
-    setTimeout(resolve, 20);
-  });
-  console.log(game());
-});
-// console.log(game());
+// window.addEventListener('load', async () => {
+//   await new Promise((resolve) => {
+//     setTimeout(resolve, 20);
+//   });
+//   console.log(game());
+// });
+console.log(game());
